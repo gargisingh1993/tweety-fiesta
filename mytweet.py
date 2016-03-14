@@ -30,10 +30,10 @@ def main():
     
     
 def myfunction(keyword):
-    CONSUMER_KEY = "Icn8VwBk5kjqv5XQlyf9LpqV3" # enter your app's consumer key
-    CONSUMER_SECRET = "sT50aK0JANqzbGuTRrCs8BOCs0WwnYvLmCnRK6yPB1oYeedbvQ" # enter app's consumer secret 
-    ACCESS_KEY ="4729598838-wD5JKXxDakjDE2dysq2mW83mvjWYr1zTcde0sfY" # enter access token 
-    ACCESS_SECRET = "ZgDpPfwFVp8RggOcBd4wr9jCfxqzvD5gn9tUZ8780o6Le" #access token secret 
+    CONSUMER_KEY = "" # enter your app's consumer key
+    CONSUMER_SECRET = "" # enter app's consumer secret 
+    ACCESS_KEY ="" # enter access token 
+    ACCESS_SECRET = "" #access token secret 
     auth = OAuth1(CONSUMER_KEY,CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET)
     url='https://api.twitter.com/1.1/search/tweets.json?q='+keyword
     res = requests.get(url,auth = auth)
